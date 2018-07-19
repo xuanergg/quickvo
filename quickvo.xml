@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<quickvo xmlns="http://www.sagframe.com/schema/quickvo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.sagframe.com/schema/quickvo http://www.sagframe.com/schema/sqltoy/quickvo.xsd">
+	<property file="system.properties" />
+	<!-- 最大小数位长度,避免个别数据库NUMBER(m,0)的情况下获取出来的默认小数位长度都很长 -->
+	<property name="max.scale.length" value="3" />
+	<property name="project.version" value="1.0.0" />
+	<property name="project.name" value="ubmp-services-parent" />
+	<property name="project.package" value="com.sinochem.ubmp.modules" />
+	<property name="include.schema" value="true" />
+	<!-- oracle支持schema,DB2:catalog -->
+	<datasource name="ubmpdb" driver="${jdbc.connection.driver_class}" url="${jdbc.connection.url}" 
+		username="${jdbc.connection.username}" password="${jdbc.connection.password}" 
+		catalog="ubmpdb"/>
+	<tasks dist="src/main/java" encoding="UTF-8">
+		 
+		<!-- active：可选属性，默认为true,表示是否执行该任务 author：作者,填写模块负责人信息 include:正则表达式,跟数据库表名匹配,指需要生产VO的表exclude:正则表达式,需要排除的表 -->
+		<task active="false" include="^SAG_DICT_DETAIL$"
+			  exclude="^SAG_OPERATE_LOG|^SAG_ATTACHMENT_FILE" datasource="ubmpdb">
+			<!-- 			package:vo生成后存放的包路径 substr:表名生成VO后需要截取掉的名称,一般数据库表会按照模块名称开头命名，如：sys_organ_info  -->
+			<!-- 				生成VO后为SysOrganInfo,为了名称简洁，我们可以去除Sys，结果为：OrganInfo name:vo的命名规则，将上述例子中OrganInfo替换#{subName}VO中的#{subName}后为OrganInfoVO  -->
+			<!-- 				#{subName}为固定参数，不可改变 -->
+			<vo package="${project.package}.sagacity.vo" substr="Sag" name="#{subName}VO" />
+		</task>
+		<task active="false" include="^SAG_ATTACHMENT_FILE$" datasource="ubmpdb">
+			<vo package="${project.package}.sagacity.vo" substr="Sag" name="#{subName}VO" />
+		</task>
+		<task active="false" author="xuan" include="^SAG_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.sagacity.vo" substr="Sag" name="#{subName}VO" />
+		</task>
+		<task active="false" author="wyl" include="^SYS_STAFF_INFO" datasource="ubmpdb">
+			<vo package="${project.package}.system.vo" substr="Sys" name="#{subName}VO" />
+		</task>
+		<!-- 基础信息 -->
+		<task active="false" author="xuan" include="^SYS_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.system.vo" substr="Sys" name="#{subName}VO" />
+		</task>
+		<!-- 产品相关 -->
+		<task active="false" author="xuan" include="^GD_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.goods.vo" substr="Gd" name="#{subName}VO" />
+		</task>
+		<task active="false" author="xuan" include="^BIZ_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.sagacity.vo" substr="Biz" name="#{subName}VO" />
+		</task>
+
+		<task active="false" author="xuan" include="^NEBULA_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.nebula.vo" substr="Nebula" name="#{subName}VO" />
+		</task>
+		<!-- 客户相关 -->
+		<task active="false" author="xuan" include="^CC_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.customer.vo" substr="Cc" name="#{subName}VO" />
+		</task>
+		<!-- 价格中心 -->
+		<task active="false" author="xuan" include="^PCC_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.price.vo" substr="Pcc" name="#{subName}VO" />
+		</task>
+		<!-- 财务管理 -->
+		<task active="false" author="wyl" include="^FN_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.finance.vo" substr="Fn" name="#{subName}VO" />
+		</task>
+		<!-- 仓储物流 -->
+		<task active="true" author="xuan" include="^WMS_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.warehouse.vo" substr="Wms" name="#{subName}VO" />
+		</task>
+		<!-- 订单中心 -->
+		<task active="false" author="xuan" include="^OD_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.order.vo" substr="Od" name="#{subName}VO" />
+		</task>
+		
+		<!-- 合同模板 -->
+		<task active="false" author="xuan" include="^CON_CONTRACT_\w+" datasource="ubmpdb">
+			<vo package="${project.package}.contract.vo" substr="Con" name="#{subName}VO" />
+		</task>
+	</tasks>
+	
+	<!-- 主键生成机制 -->
+	<primary-key>
+		<!-- <table name="UC_\w+|GD_\w+|COM_\w+" strategy="generator" generator="default" />
+		<table name="OD_\w+" strategy="assign" /> -->
+		<!-- <table name="DIM_MEMBER_CARD" strategy="sequence" sequence="SEQ_DIM_MEMBER_CARD"/> -->
+	</primary-key>
+	<business-primary-key >
+		<table name="GD_GOODS_INFO" column="GOODS_CODE" signature="SP@day(yyyyMMdd)" length="15" 
+			generator="redis" />
+		<table name="FN_LOAN_RESOURCE" column="RESOURCE_SN" signature="ZJ@day(yyyyMMdd)" length="15" 
+			generator="redis" />
+	</business-primary-key>
+
+	<!-- 主子表的级联关系 -->
+	<cascade>
+		<!-- <table name="NEBULA_ATTRIBUTE" update-cascade="delete" load="default" delete="true" /> -->
+		<!-- <table name="COM_BIZ_APPLY_ITEM" update-cascade="delete" load="default" /> -->
+	</cascade>
+
+	<!-- 数据类型对应关系，native-types表示特定数据库返回的字段类型; jdbc-type：表示对应jdbc标准的类型(见:java.sql.Types),jdbc-type主要用于vo
+		@Column注解中，设置 其类型，方便操作数据库插入或修改时设置类型;java-type:表示转换为java VO时类型 -->
+	<type-mapping>
+		<sql-type native-types="DATE,DATETIME" jdbc-type="DATE"
+				  java-type="java.util.Date" />
+		<sql-type native-types="TIMESTAMP(6),TIMESTAMP" jdbc-type="TIMESTAMP"
+				  java-type="java.sql.Timestamp" />
+		<sql-type native-types="CHAR,CLOB" java-type="String" />
+		<sql-type native-types="LONGTEXT,TEXT,VARCHAR,VARCHAR2" jdbc-type="VARCHAR"
+				  java-type="String" />
+		<sql-type native-types="TINYINT,INT,INTEGER" java-type="Integer" />
+		<sql-type native-types="BIGINT" scale="0" java-type="Long" />
+		<sql-type native-types="NUMBER,DECIMAL,NUMERIC" precision="1..8"
+				  scale="0" jdbc-type="INTEGER" java-type="Integer" />
+		<sql-type native-types="NUMBER,DECIMAL,NUMERIC" precision="9..18"
+				  scale="0" jdbc-type="INTEGER" java-type="Long" />
+		<sql-type native-types="NUMBER,DECIMAL,NUMERIC" precision="2..14"
+				  scale="1..4" jdbc-type="DOUBLE" java-type="Double" />
+		<sql-type native-types="NUMBER,DECIMAL,NUMERIC" precision="19..38"
+				  scale="0..6" jdbc-type="DECIMAL" java-type="java.math.BigDecimal" />
+
+		<sql-type native-types="image" java-type="byte[]" />
+		<sql-type native-types="BLOB,LONGBLOB,MEDIUMBLOB" jdbc-type="BLOB"
+				  java-type="byte[]" />
+	</type-mapping>
+</quickvo>

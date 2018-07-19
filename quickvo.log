@@ -1,0 +1,121 @@
+2018-07-13 11:40:45 [main] INFO  QuickVOStart:86 - Begin load jdbc driver jar path from ./drivers!
+2018-07-13 11:40:45 [main] INFO  DBHelper:90 - 开始连接数据库:ubmpdb,url:jdbc:mysql://47.95.176.191:3306/ubmpdb?characterEncoding=UTF-8&useSSL=false
+2018-07-13 11:40:46 [main] INFO  TaskController:125 - 开始执行第:1 个任务,includes=:^WMS_\w+
+2018-07-13 11:40:46 [main] INFO  TaskController:147 - 当前任务共取出:29 张表或视图!
+2018-07-13 11:40:46 [main] INFO  TaskController:180 - 正在处理表:wms_check_inout_stock
+2018-07-13 11:40:46 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractCheckInoutStockVO.java
+2018-07-13 11:40:46 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractCheckInoutStockVO.java
+2018-07-13 11:40:47 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\CheckInoutStockVO.java
+2018-07-13 11:40:47 [main] INFO  TaskController:180 - 正在处理表:wms_inventory_stand_book
+2018-07-13 11:40:47 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractInventoryStandBookVO.java
+2018-07-13 11:40:47 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractInventoryStandBookVO.java
+2018-07-13 11:40:47 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\InventoryStandBookVO.java
+2018-07-13 11:40:47 [main] INFO  TaskController:180 - 正在处理表:wms_inventory_trans_jnl
+2018-07-13 11:40:47 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractInventoryTransJnlVO.java
+2018-07-13 11:40:47 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractInventoryTransJnlVO.java
+2018-07-13 11:40:47 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\InventoryTransJnlVO.java
+2018-07-13 11:40:47 [main] INFO  TaskController:180 - 正在处理表:wms_logistics
+2018-07-13 11:40:47 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractLogisticsVO.java
+2018-07-13 11:40:47 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractLogisticsVO.java
+2018-07-13 11:40:47 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\LogisticsVO.java
+2018-07-13 11:40:47 [main] INFO  TaskController:180 - 正在处理表:wms_logistics_goods
+2018-07-13 11:40:48 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractLogisticsGoodsVO.java
+2018-07-13 11:40:48 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractLogisticsGoodsVO.java
+2018-07-13 11:40:48 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\LogisticsGoodsVO.java
+2018-07-13 11:40:48 [main] INFO  TaskController:180 - 正在处理表:wms_logistics_trace
+2018-07-13 11:40:48 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractLogisticsTraceVO.java
+2018-07-13 11:40:48 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractLogisticsTraceVO.java
+2018-07-13 11:40:48 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\LogisticsTraceVO.java
+2018-07-13 11:40:48 [main] INFO  TaskController:180 - 正在处理表:wms_move_stock
+2018-07-13 11:40:48 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractMoveStockVO.java
+2018-07-13 11:40:48 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractMoveStockVO.java
+2018-07-13 11:40:48 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\MoveStockVO.java
+2018-07-13 11:40:48 [main] INFO  TaskController:180 - 正在处理表:wms_move_stock_goods
+2018-07-13 11:40:49 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractMoveStockGoodsVO.java
+2018-07-13 11:40:49 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractMoveStockGoodsVO.java
+2018-07-13 11:40:49 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\MoveStockGoodsVO.java
+2018-07-13 11:40:49 [main] INFO  TaskController:180 - 正在处理表:wms_shipment
+2018-07-13 11:40:49 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentVO.java
+2018-07-13 11:40:49 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentVO.java
+2018-07-13 11:40:49 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\ShipmentVO.java
+2018-07-13 11:40:49 [main] INFO  TaskController:180 - 正在处理表:wms_shipment_item
+2018-07-13 11:40:49 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentItemVO.java
+2018-07-13 11:40:49 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentItemVO.java
+2018-07-13 11:40:49 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\ShipmentItemVO.java
+2018-07-13 11:40:49 [main] INFO  TaskController:180 - 正在处理表:wms_shipment_item_goods
+2018-07-13 11:40:50 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentItemGoodsVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentItemGoodsVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\ShipmentItemGoodsVO.java
+2018-07-13 11:40:50 [main] INFO  TaskController:180 - 正在处理表:wms_shipment_lost
+2018-07-13 11:40:50 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentLostVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentLostVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\ShipmentLostVO.java
+2018-07-13 11:40:50 [main] INFO  TaskController:180 - 正在处理表:wms_shipment_lost_item
+2018-07-13 11:40:50 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentLostItemVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentLostItemVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\ShipmentLostItemVO.java
+2018-07-13 11:40:50 [main] INFO  TaskController:180 - 正在处理表:wms_shipment_notice
+2018-07-13 11:40:50 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentNoticeVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentNoticeVO.java
+2018-07-13 11:40:50 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\ShipmentNoticeVO.java
+2018-07-13 11:40:50 [main] INFO  TaskController:180 - 正在处理表:wms_shipment_notice_item
+2018-07-13 11:40:51 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentNoticeItemVO.java
+2018-07-13 11:40:51 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractShipmentNoticeItemVO.java
+2018-07-13 11:40:51 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\ShipmentNoticeItemVO.java
+2018-07-13 11:40:51 [main] INFO  TaskController:180 - 正在处理表:wms_stock_check_list
+2018-07-13 11:40:51 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckListVO.java
+2018-07-13 11:40:51 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckListVO.java
+2018-07-13 11:40:51 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\StockCheckListVO.java
+2018-07-13 11:40:51 [main] INFO  TaskController:180 - 正在处理表:wms_stock_check_plan
+2018-07-13 11:40:51 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckPlanVO.java
+2018-07-13 11:40:51 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckPlanVO.java
+2018-07-13 11:40:51 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\StockCheckPlanVO.java
+2018-07-13 11:40:51 [main] INFO  TaskController:180 - 正在处理表:wms_stock_check_report
+2018-07-13 11:40:52 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckReportVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckReportVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\StockCheckReportVO.java
+2018-07-13 11:40:52 [main] INFO  TaskController:180 - 正在处理表:wms_stock_check_report_detail
+2018-07-13 11:40:52 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckReportDetailVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckReportDetailVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\StockCheckReportDetailVO.java
+2018-07-13 11:40:52 [main] INFO  TaskController:180 - 正在处理表:wms_stock_check_report_file
+2018-07-13 11:40:52 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckReportFileVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckReportFileVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\StockCheckReportFileVO.java
+2018-07-13 11:40:52 [main] INFO  TaskController:180 - 正在处理表:wms_stock_check_staff
+2018-07-13 11:40:52 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckStaffVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractStockCheckStaffVO.java
+2018-07-13 11:40:52 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\StockCheckStaffVO.java
+2018-07-13 11:40:53 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_area
+2018-07-13 11:40:53 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseAreaVO.java
+2018-07-13 11:40:53 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseAreaVO.java
+2018-07-13 11:40:53 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseAreaVO.java
+2018-07-13 11:40:53 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_category
+2018-07-13 11:40:53 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseCategoryVO.java
+2018-07-13 11:40:53 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseCategoryVO.java
+2018-07-13 11:40:53 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseCategoryVO.java
+2018-07-13 11:40:53 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_contact
+2018-07-13 11:40:53 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseContactVO.java
+2018-07-13 11:40:53 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseContactVO.java
+2018-07-13 11:40:53 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseContactVO.java
+2018-07-13 11:40:53 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_info
+2018-07-13 11:40:54 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseInfoVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseInfoVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseInfoVO.java
+2018-07-13 11:40:54 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_lease
+2018-07-13 11:40:54 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseLeaseVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseLeaseVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseLeaseVO.java
+2018-07-13 11:40:54 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_lease_detail
+2018-07-13 11:40:54 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseLeaseDetailVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseLeaseDetailVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseLeaseDetailVO.java
+2018-07-13 11:40:54 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_service_charge
+2018-07-13 11:40:54 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseServiceChargeVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseServiceChargeVO.java
+2018-07-13 11:40:54 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseServiceChargeVO.java
+2018-07-13 11:40:54 [main] INFO  TaskController:180 - 正在处理表:wms_warehouse_site
+2018-07-13 11:40:55 [main] INFO  TaskController:731 - 正在生成文件:C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseSiteVO.java
+2018-07-13 11:40:55 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\base\AbstractWarehouseSiteVO.java
+2018-07-13 11:40:55 [main] INFO  TemplateGenerator:137 - generate file C:\Users\xuan\Desktop\quickvo\src\main\java\com\sinochem\ubmp\modules\warehouse\vo\WarehouseSiteVO.java
+2018-07-13 11:40:55 [main] INFO  QuickVOStart:93 - 成功完成vo以及vo<-->po映射类的生成!
